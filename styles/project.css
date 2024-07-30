@@ -1,0 +1,66 @@
+.project{
+    width: 98%;
+    margin: auto;
+    /* background-color: red; */
+    margin-top: 10px;
+
+}
+
+.project .main-box{
+    width: 100%;
+    /* height: 200px; */
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.project .main-box .box{
+    position: relative;
+    width: 24%;
+    height: 250px;
+    margin-top: 10px;
+    /* background-color: yellow; */
+}
+
+.project .main-box .box h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.347);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.project .main-box .box:hover h1{
+    background-color: black;
+}
+
+.project .main-box .box:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width:1010px){
+    .project .main-box .box{
+        width: 32%;
+    }
+}
+
+@media (max-width:806px){
+    .project .main-box .box{
+        width: 49%;
+    }
+}
+
+@media (max-width:520px){
+    .project .main-box .box{
+        width: 100%;
+    }
+    .project{
+        width: 95%;
+    }
+}
